@@ -1,5 +1,8 @@
 /* common style or utilites */
 body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     background-color: #F3F1FF;
 }
@@ -19,6 +22,58 @@ hr{
     border: 1px solid #D1D1D1;
     margin-bottom: 25px;
 }
+/* header area */
+.header-container{
+    background-color: #562eff;
+    padding: 14px 0;
+    margin-bottom: 12px;
+}
+.navbar-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .navbar-nav , .logo, .nav-item a{
+      text-decoration: none;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+    margin-left: 7px;
+  }
+  .logo img {
+      width: 40px;
+  }
+  .logo h2 {
+    color: #ffffff;
+    font-size: 24px;
+    margin-left: 16px;
+    font-weight: 500;
+  }
+  
+  .navbar-nav {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+  }
+  
+  .nav-item {
+    list-style: none;
+    margin: 0px 15px;
+  }
+  
+  .nav-link {
+    color: #ffffff;
+  }
+  
+  .profile-part {
+    margin-left: 18px;
+  }
+  
+  .user img {
+    width: 51px;
+    margin-right: 12px;
+  }
 /* top players */
 .top-players{
     padding-bottom: 22px;
@@ -93,9 +148,10 @@ hr{
     grid-column-gap: 24px;
     justify-content: center;
 }
-.course{
-    width: 253px;
-    filter: drop-shadow(0px 5.34229px 13.3557px rgba(0, 0, 0, 0.05));;
+.course {
+    padding: 10px;
+    border-radius: 17px;
+    box-shadow: 0px 5.34229px 13.3557px rgb(0 0 0 / 5%);
 }
 .course .course-banner img{
     width: 224px;
@@ -147,6 +203,12 @@ hr{
     .container{
         width: 100%;
     }
+    .header-container{
+        width: 100%;
+    }
+    .navbar-nav {
+        display: none;
+    }
     .section-title{
         text-align: center;
     }
@@ -160,9 +222,11 @@ hr{
     .blog-info{
         text-align: center;
     }
-    .course{
-      width: 100%;
-      margin-bottom: 15px;
+    .course {
+        padding: 10px;
+        border-radius: 17px;
+        box-shadow: 0px 5.34229px 13.3557px rgb(0 0 0 / 5%);
+        margin-bottom: 15px;
     }
     .course-info{
         justify-content: space-evenly;
@@ -171,6 +235,9 @@ hr{
 /* tablet device */
 @media only screen and (min-width: 688px) and (max-width: 992px) {
     .container{
+        width: 100%;
+    }
+    .header-container{
         width: 100%;
     }
     .section-title{
@@ -186,10 +253,12 @@ hr{
     .courses{
         grid-template-columns: repeat(1, 1fr);
     }
-    .course{
-        width: 100%;
+    .course {
+        padding: 10px;
+        border-radius: 17px;
+        box-shadow: 0px 5.34229px 13.3557px rgb(0 0 0 / 5%);
         margin-bottom: 15px;
-      }
+    }
     .course-info{
         justify-content: space-evenly;
     } 
